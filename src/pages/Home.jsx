@@ -1,181 +1,177 @@
 import { Link } from 'react-router-dom'
-import { BarChart3, Users, CheckCircle, Shield, TrendingUp, Award } from 'lucide-react'
+import { ArrowRight, CheckCircle } from 'lucide-react'
 
 export default function Home() {
-  const services = [
+  const servicios = [
     {
-      icon: BarChart3,
+      icon: '📋',
       title: 'PMO & Gerencia de Proyectos',
-      description: 'Implementación de oficinas de proyectos bajo estándar PMI con gobierno, KPIs y control integral.',
+      description: 'Implementación de oficinas de proyectos bajo estándar PMI con gobierno, KPIs y control integral.'
     },
     {
-      icon: Users,
+      icon: '🏗️',
       title: 'Dirección de Obra',
-      description: 'Coordinación de contratistas, supervisión técnica y aseguramiento de calidad en sitio.',
+      description: 'Coordinación de contratistas, supervisión técnica y aseguramiento de calidad en sitio.'
     },
     {
-      icon: TrendingUp,
+      icon: '🏢',
       title: 'Construcción Industrial',
-      description: 'Naves, plantas, ampliaciones y proyectos llave en mano para clientes corporativos.',
+      description: 'Naves, plantas, ampliaciones y proyectos llave en mano para clientes corporativos.'
     },
     {
-      icon: Shield,
-      title: 'Gestión de Riesgos & EHS',
-      description: 'Implementación de sistemas de seguridad, salud y ambiente según normativas.',
-    },
-    {
-      icon: CheckCircle,
-      title: 'Procura & Licitaciones',
-      description: 'Gestión de adquisiciones, procesos competitivos y selección de proveedores.',
-    },
-    {
-      icon: Award,
+      icon: '📊',
       title: 'Control de Costos y Tiempo',
-      description: 'Análisis de desviaciones, earned value management y optimización de cronogramas.',
+      description: 'Seguimiento exhaustivo con reportes de avance y presupuesto en tiempo real.'
     },
+    {
+      icon: '🛡️',
+      title: 'Gestión de Riesgos & EHS',
+      description: 'Auditorías de avance y premusualidad en protocolos de seguridad.'
+    },
+    {
+      icon: '⚙️',
+      title: 'Procura & Licitaciones',
+      description: 'Gestión integral de proveedores y procesos de selección competitiva.'
+    }
   ]
 
-  const stats = [
-    { number: '150+', label: 'Proyectos Completados' },
-    { number: '10+', label: 'Años de Experiencia' },
-    { number: '98%', label: 'Satisfacción Cliente' },
-  ]
+  const clientes = [
+
+  {
+    logo: '/assets/Cliente 1.png',
+    alt: 'Cliente 1'
+  },
+  {
+    logo: '/assets/Client 2.jfif',
+    alt: 'Client 2'
+  }
+]
+  
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section con Background */}
-      <section className="relative min-h-[600px] flex items-center overflow-hidden bg-gradient-dark">
-        {/* Background Image con overlay */}
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-40"
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="relative h-96 md:h-[500px] overflow-hidden bg-dark">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-59"
           style={{
-            backgroundImage: 'url(data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="%23D97E3A" stroke-width="0.5" opacity="0.2"/></pattern></defs><rect width="1200" height="600" fill="%230F1011"/><rect width="1200" height="600" fill="url(%23grid)"/></svg>)',
-            backgroundAttachment: 'fixed',
+           backgroundImage: 'url(/assets/hero.jpg.png)',
           }}
-        ></div>
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-          <div className="inline-block mb-6 px-4 py-2 bg-accent-orange bg-opacity-20 rounded-full border border-accent-orange border-opacity-30">
-            <p className="text-accent-gold text-sm font-semibold uppercase tracking-wider">
+        />
+        <div className="absolute inset-0 bg-black opacity-40" />
+        
+        <div className="relative h-full flex flex-col justify-center items-center text-center px-4">
+          <div className="mb-4 inline-block">
+            <span className="inline-block px-4 py-1.5 bg-accent-gold/20 text-accent-gold text-sm font-semibold rounded-full">
               • PMO · GERENCIA DE PROYECTOS
-            </p>
+            </span>
           </div>
-
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Construimos con <span className="text-accent-gold italic">precisión,</span>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 max-w-3xl leading-tight">
+            Construimos con <span className="text-accent-gold">precisión</span>,
             <br />
-            entregamos con <span className="text-accent-orange italic">excelencia.</span>
+            entregamos con <span className="text-accent-gold">excelencia</span>.
           </h1>
-
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            BENIAH Projects es una firma especializada en project management y gerencia de construcción.
-            Coordinamos cada fase de su obra con metodología PMI, control total de costos y calidad.
+          <p className="text-lg text-gray-200 mb-8 max-w-2xl">
+            BENIAH Projects es una firma especializada en project management y gerencia de construcción. Coordinamos cada fase de su obra con metodología PMI, control total y estándares internacionales.
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Link
               to="/contacto"
-              className="px-8 py-3 bg-gradient-to-r from-accent-orange to-accent-orange-dark text-white font-semibold rounded-lg hover:shadow-hover transition-all duration-300 hover:-translate-y-1"
+              className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-accent-orange to-accent-orange-dark text-white font-semibold rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >
-              Iniciar Proyecto
+              Solicitar Cotización
+              <ArrowRight className="ml-2" size={20} />
             </Link>
             <Link
-              to="/servicios"
-              className="px-8 py-3 border-2 border-accent-gold text-accent-gold font-semibold rounded-lg hover:bg-accent-gold hover:text-neutral-dark transition-all duration-300"
+              to="/portafolio"
+              className="inline-flex items-center justify-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
             >
-              Ver Servicios
+              Ver Proyectos
             </Link>
           </div>
+        </div>
+      </section>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-gray-700">
-            {stats.map((stat, index) => (
-              <div key={index} className="animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
-                <p className="text-4xl font-bold text-accent-gold mb-2">{stat.number}</p>
-                <p className="text-gray-400">{stat.label}</p>
+      {/* Quiénes Somos */}
+      <section id="nosotros" className="py-16 md:py-24 bg-neutral-light">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-dark mb-4">
+              Una firma de <span className="text-primary-900">project management</span> con visión integral.
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-accent-orange to-accent-gold mx-auto"></div>
+          </div>
+          <div className="prose prose-lg max-w-none text-gray-700">
+            <p className="text-lg leading-relaxed">
+              En BENIAH Projects dirigimos proyectos de construcción e infraestructura aplicando los más altos estándares del Project Management Institute (PMI). Acompañamos a nuestros clientes desde la concepción de la idea hasta la puesta en marcha, asegurando que cada etapa se ejecute conforme a cronograma, presupuesto y especificaciones técnicas.
+            </p>
+            <p className="text-lg leading-relaxed mt-4">
+              Nuestro equipo de profesionales certificados combina experiencia operativa en campo con disciplina administrativo-financiera, proporcionando soluciones que minimizan riesgos, optimizan recursos y maximizan retorno de inversión.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Servicios */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-neutral-dark mb-12">
+            Soluciones integrales para cada fase del <span className="text-primary-900">proyecto</span>.
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {servicios.map((servicio, index) => (
+              <div
+                key={index}
+                className="p-6 bg-neutral-light rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-200"
+              >
+                <div className="text-4xl mb-4">{servicio.icon}</div>
+                <h3 className="text-xl font-bold text-neutral-dark mb-3">{servicio.title}</h3>
+                <p className="text-gray-600">{servicio.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Quiénes Somos Section */}
-      <section className="py-20 bg-white">
+      {/* Clientes - Reemplaza la cintilla de números */}
+      <section className="py-16 md:py-24 bg-neutral-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-accent-orange text-sm font-semibold uppercase tracking-wider mb-4">
-              Quiénes Somos
-            </p>
-            <h2 className="text-4xl md:text-5xl font-bold">
-              Una firma de <span className="text-accent-orange">project</span>
-              <br />
-              <span className="italic text-primary-900">management</span> con visión integral.
+            <p className="text-accent-gold font-semibold uppercase tracking-wide mb-2">Quiénes han compartido su confianza en nosotros</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-dark">
+              Nuestros <span className="text-primary-900">clientes</span>
             </h2>
           </div>
-
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-12">
-            En Beniah Projects dirigimos proyectos de construcción e infraestructura aplicando los más altos estándares del Project Management Institute (PMI). 
-            Acompañamos a nuestros clientes desde la estrategia inicial hasta la entrega final, asegurando máxima eficiencia en tiempo, costo y calidad.
-          </p>
-
-          <div className="h-1 w-24 bg-gradient-to-r from-accent-orange to-accent-gold mx-auto mb-12"></div>
-        </div>
-      </section>
-
-      {/* Servicios Section */}
-      <section className="py-20 bg-neutral-light">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Soluciones Integrales</h2>
-            <p className="text-xl text-gray-600">
-              Servicios especializados para cada fase del proyecto
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => {
-              const IconComponent = service.icon
-              return (
-                <div
-                  key={index}
-                  className="bg-white p-8 rounded-xl border border-gray-200 card-hover shadow-sm animate-fade-in-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-100 transition-colors">
-                    <IconComponent className="text-primary-900" size={24} />
-                  </div>
-                  <h3 className="text-xl font-bold text-neutral-dark mb-3">{service.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{service.description}</p>
-                </div>
-              )
-            })}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link
-              to="/servicios"
-              className="inline-block px-8 py-3 bg-gradient-to-r from-accent-orange to-accent-orange-dark text-white font-semibold rounded-lg hover:shadow-hover transition-all duration-300 hover:-translate-y-1"
-            >
-              Ver Todos los Servicios
-            </Link>
+          
+          <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20">
+            {clientes.map((cliente, index) => (
+              <div key={index} className="flex items-center justify-center bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <img
+                  src={cliente.logo}
+                  alt={cliente.alt}
+                  className="h-20 md:h-24 w-auto object-contain"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-900 to-accent-orange">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            ¿Listo para Optimizar tu Proyecto?
+      {/* CTA Final */}
+      <section className="py-16 md:py-24 bg-gradient-to-r from-primary-900 via-accent-orange to-accent-orange-dark">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            ¿Listo para llevar tu proyecto al siguiente nivel?
           </h2>
-          <p className="text-xl mb-8 text-white text-opacity-90">
-            Contáctanos hoy para una consulta sin compromiso
+          <p className="text-lg text-white/90 mb-8">
+            Contáctanos hoy y descubre cómo BENIAH Projects puede optimizar la ejecución de tu obra.
           </p>
           <Link
             to="/contacto"
-            className="inline-block px-8 py-3 bg-white text-primary-900 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:shadow-lg"
+            className="inline-flex items-center justify-center px-8 py-3 bg-white text-primary-900 font-semibold rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
           >
-            Agendar Consulta
+            Solicitar Información
+            <ArrowRight className="ml-2" size={20} />
           </Link>
         </div>
       </section>

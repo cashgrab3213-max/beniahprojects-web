@@ -20,7 +20,8 @@ export default function Navbar() {
           {/* Logo Image */}
           <Link to="/" className="flex items-center group">
             <img 
-              src="/src/assets/Logo.png.png" 
+               src="/assets/Logo.png"
+               
               alt="BENIAH Projects" 
               className="h-12 w-auto hover:opacity-80 transition-opacity"
             />
