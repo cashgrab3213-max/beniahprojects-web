@@ -45,8 +45,8 @@ export default function Home() {
       alt: 'Client 2'
     }
     {
-  logo: ´/src/assets/cliente 3.png´,
-  alt: ´Cliente 3´
+   logo: '/src/assets/Cliente 3.png',
+    alt: 'Cliente 3'
 },
   ]
 
