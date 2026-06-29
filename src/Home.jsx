@@ -44,6 +44,10 @@ export default function Home() {
       logo: '/src/assets/Client 2.jfif',
       alt: 'Client 2'
     }
+    {
+  name: "Grupo Crexa",
+  logo: "/images/clients/logo crexa.png"
+},
   ]
 
   return (
