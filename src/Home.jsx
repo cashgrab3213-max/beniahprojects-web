@@ -45,7 +45,7 @@ export default function Home() {
       alt: 'Client 2'
     }
     {
-  logo: ´/src/assets/cliente 3.logo crexa.png´,
+  logo: ´/src/assets/cliente 3.png´,
   alt: ´Cliente 3´
 },
   ]
