@@ -44,11 +44,13 @@ export default function Home() {
   {
     logo: '/assets/Client 2.jfif',
     alt: 'Client 2'
-  }
+  }  
+    {
     logo: '/assets/Client 3.png',
     alt: 'Grupo Crexa'
-]
-  return (
+  }
+  ]
+     return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative h-96 md:h-[500px] overflow-hidden bg-dark">
