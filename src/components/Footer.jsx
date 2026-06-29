@@ -12,7 +12,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <img 
-              src="/src/assets/Logo.png.png" 
+              src="/src/assets/Logo.png" 
               alt="BENIAH Projects" 
               className="h-16 w-auto mb-4"
             />
