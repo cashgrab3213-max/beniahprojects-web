@@ -53,7 +53,6 @@ export default function Portafolio() {
       year: '2018',
       color: 'from-green-600 to-primary-900',
     },
-  ]
   {
    id: 7,
       titulo: 'Edificio industrial Symrise',
@@ -61,7 +60,8 @@ export default function Portafolio() {
       desc: 'Construcción de edificio industrial con especificaciones técnicas de procesos.',
       year: '2023',
       color: 'from-accent-orange to-accent-orange-dark',
-     },
+     }
+    ]
   const categorias = [
     { valor: 'todos', label: 'Todos' },
     { valor: 'residencial', label: 'Residencial' },
