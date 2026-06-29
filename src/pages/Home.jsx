@@ -44,11 +44,11 @@ export default function Home() {
   {
     logo: '/assets/Client 2.jfif',
     alt: 'Client 2'
-  }  
+  },
     {
     logo: '/assets/Client 3.png',
     alt: 'Grupo Crexa'
-  }
+  },
   ]
      return (
     <div className="min-h-screen bg-white">
