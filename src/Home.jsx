@@ -39,15 +39,14 @@ export default function Home() {
     {
       logo: '/src/assets/Cliente 1.png',
       alt: 'Cliente 1'
-    },
-    {
-      logo: '/src/assets/Client 2.jfif',
-      alt: 'Client 2'
-    }
-    {
-   logo: '/src/assets/Cliente 3.png',
-    alt: 'Cliente 3'
+ {
+ logo: '/src/assets/Client 2.jfif',
+ alt: 'Client 2'
 },
+{
+ logo: '/src/assets/Cliente 3.png',
+ alt: 'Cliente 3'
+}
   ]
 
   return (
@@ -68,13 +67,11 @@ export default function Home() {
               • PMO · GERENCIA DE PROYECTOS
             </span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 max-w-3xl leading-tight">
-            Construimos con <span className="text-accent-gold">precisión</span>,
-            <br />
-            entregamos con <span className="text-accent-gold">excelencia</span>.
-          </h1>
+          <h1 BENIAH Projects:
+              Gerencia de proyectos, PMO y dirección de obra industrial.
+        </h1>
           <p className="text-lg text-gray-200 mb-8 max-w-2xl">
-            BENIAH Projects es una firma especializada en project management y gerencia de construcción. Coordinamos cada fase de su obra con metodología PMI, control total y estándares internacionales.
+            BENIAH Projects es una firma especializada en gerencia de proyectos de construcción, PMO industrial y dirección de obra para empresas en México. Aplicamos metodología PMI para controlar alcance, costo, tiempo y calidad.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -120,6 +117,9 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-neutral-dark mb-12">
             Soluciones integrales para cada fase del <span className="text-primary-900">proyecto</span>.
           </h2>
+          <Link to="/servicios/pmo">
+          <h3>PMO & Gerencia de Proyectos</h3>
+           </Link>
           <div className="grid md:grid-cols-3 gap-8">
             {servicios.map((servicio, index) => (
               <div
