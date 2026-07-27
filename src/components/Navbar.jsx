@@ -53,7 +53,7 @@ export default function Navbar() {
               <Facebook size={18} />
             </a>
             <a
-              href="https://www.instagram.com/beniahprojects"
+              href="https://www.facebook.com/profile.php?id=61592481260472"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 rounded-full bg-gradient-to-r from-accent-orange to-accent-orange-dark text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
