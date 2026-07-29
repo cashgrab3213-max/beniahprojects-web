@@ -44,7 +44,7 @@ export default function Navbar() {
           {/* Social Icons */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="https://www.facebook.com/beniahprojects"
+              href="https://www.facebook.com/Beniahprojects"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 rounded-full bg-gradient-to-r from-accent-orange to-accent-orange-dark text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
@@ -87,7 +87,7 @@ export default function Navbar() {
             ))}
             <div className="flex space-x-2 px-4 pt-2">
               <a
-                href="https://www.facebook.com/profile.php?id=61592481260472"
+                href="https://www.facebook.com/Beniahprojects"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-full bg-gradient-to-r from-accent-orange to-accent-orange-dark text-white"
