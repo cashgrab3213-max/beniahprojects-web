@@ -95,7 +95,7 @@ export default function Navbar() {
                 <Facebook size={18} />
               </a>
               <a
-                href="https://www.instagram.com/beniahprojects"
+                href="https://www.instagram.comhttps://www.instagram.com/beniahprojects/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-full bg-gradient-to-r from-accent-orange to-accent-orange-dark text-white"
