@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -78,6 +78,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-accent-orange hover:bg-accent-orange-dark transition-colors"
+                aria-label="Facebook"
               >
                 <Facebook size={18} />
               </a>
@@ -86,8 +87,18 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-accent-orange hover:bg-accent-orange-dark transition-colors"
+                aria-label="Instagram"
               >
                 <Instagram size={18} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/beniahproyectos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-accent-orange hover:bg-accent-orange-dark transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={18} />
               </a>
             </div>
           </div>
