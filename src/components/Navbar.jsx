@@ -101,14 +101,14 @@ export default function Navbar() {
                 className="p-2.5 rounded-full bg-gradient-to-r from-accent-orange to-accent-orange-dark text-white"
               >
                 <Instagram size={18} />
-                <a
-  href="https://www.linkedin.com/in/beniahproyectos"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="p-2.5 rounded-full bg-gradient-to-r from-accent-orange to-accent-orange-dark text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-  title="LinkedIn"
->
-  <Linkedin size={18} />
+               <a
+                 href="https://www.linkedin.com/in/beniahproyectos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2.5 rounded-full bg-gradient-to-r from-accent-orange to-accent-orange-dark text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                  title="LinkedIn"
+                >
+                  <Linkedin size={18} />
 </a>
               </a>
             </div>
